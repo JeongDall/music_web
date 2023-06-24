@@ -4,16 +4,20 @@
 	box-sizing: border-box;
 }
 
-header, nav {
+header, nav, main {
 	box-sizing: border-box;
-    margin: 10px;
-	padding: 0 100px;
+    margin: 0 5%;
+	padding: 0 110px;
 
 }
 
 .head-content{
 	display: flex;
 	flex-direction: row;
+}
+
+.sign-in {
+	margin: 10px;
 }
 
 .soso-title {
@@ -24,7 +28,7 @@ header, nav {
 .search{
 	margin-top: 35px;
 
-	width: 400px;
+	width: 35%;
 	height: 40px;
 	background-color: #fff;
 	border: 2px solid #c583fe;
@@ -33,7 +37,7 @@ header, nav {
 
 .search > input{
 	padding: 9px;
-	width: 325px;
+	width: 30%;
 
 	font-size: 15px;
 	border: 0;
@@ -43,7 +47,7 @@ header, nav {
 }
 
 .search > button {
-	width: 50px;
+	width: 13%;
 	height: 100%;
 
 	background-color: #c583fe;
@@ -81,12 +85,11 @@ header, nav {
     text-decoration: none;
 	font-family: 'Nanum Gothic', sans-serif;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 15px;
 	color: #444444;   
 }
 
-
-.main {
+main {
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	overflow: hidden;
@@ -95,10 +98,15 @@ header, nav {
 	outline: none;
 }
 
-#right {
+#article1{
+	margin-top: 10px;
+}
+
+#Like-Login {
+	box-sizing: border-box;
+	float: left;
     padding: 10px;
-	margin-left: 50px;
-	margin-top: 0px;
+	margin: 0 0 0 50px;
 }
 
 #likebox {
@@ -106,24 +114,52 @@ header, nav {
 }
 
 #login {
-         margin-top: 10px; 
+    margin-top: 10px; 
+}
+
+#another-web{
+	float: left;
+	box-sizing: border-box;
+	
+    margin: 3% 0%;
+	padding: 0 110px;
 }
 
 #homepage {
-         float: bottom;
-		 padding: 95px; 
+    display: flex;
+	justify-content: space-between;
+}
+
+#homepage > a{
+	padding: 0 62px;
 }
 
 footer {
 	width: 100%;
-	height: 40px;
+	height: 10%;
+	margin: 0%;
+	float: left;
 
-	border-top: #8800ff;
+	background-color: #e7e7e7;
 }
 
-footer > p {
-	padding: 15px;
+footer > div {
+	padding-top: 20px;
     width: 100%;
 	height: 50px;
-	clear: both;
+
+	color: #aaaaaa;
+	text-align: center;
+}
+
+footer > div > #email {
+	float: left;
+	padding-left: 25%;
+	font-size: 13px;
+}
+
+footer > div > #cp {
+	float: right;
+	padding-right: 25%;
+	font-size: 13px;
 }
