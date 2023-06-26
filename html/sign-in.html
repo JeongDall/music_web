@@ -6,43 +6,72 @@
     <title>Login</title>
     <style>
         .sign-in{
-            margin: 10% 34%;
-            padding: 5%;
+            margin: 0;
+            padding: 10% 10%;
 
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            text-align: left;
-
-            border: 1px solid #8800ff;
-            border-radius: 10px;
         }
 
-        h3 {
-            padding-bottom: 20px;
+        .field-signup{
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .signBtn{
+            box-sizing: border-box;
+            padding: 3% 20%;
+            width: 100%;
             
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            border: 0;
+	        outline: none;
+            border-radius: 5px;
+            background-color: #c583fe;
+
+            transition: background-color linear ;
+        }
+
+        .signBtn:hover{
+            background-color: #b075e4;
         }
 
 
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
     <div class="sign-in">
-        <h3>Sign in</h3>
+        <div class="soso-title mb-2">
+            <a href="So-So.html" alt="soso">
+                <img src="../image/So-So.png" width="160px" height="70px">
+            </a>
+        </div>
+        <h3 style="font-size: 20px; padding-bottom: 20px;">Sign in to So-So</h3>
         <form action="#">
-            <p>
-                ID &nbsp;
-                <input type="text" />
-            </p>
-            <p>
-                PW &nbsp;
-                <input type="password"/>
-            </p>
-            <br>
-            <input type="submit" value="Sign in" />
-            <input type="reset" value="Reset" /><br>
-            <a href="#" id="forgot">forgot password?</a>
-            <a href="register.html" target="_blank" id="register">Sign up</a>
+            <div class="field">
+                <label for="idInput">ID</label>
+                <input class="input is-normal mb-2" id="idInput" type="text" placeholder="">
+            </div>
+                <div class="field">
+                    <label for="pwInput">PW</label>
+                    <a href="#" id="forgot" style="float: right; font-size: small;">Forgot password?</a>
+                    <input class="input" id="pwInput" type="password" placeholder="">
+            </div>
+            
+            <a href="#">
+                <button class="signBtn" >Sign in</button>
+            </a>
+
+            <div class="field-signup" >
+                <label>New to So-So?</label>&nbsp;&nbsp;
+                <a href="register.html" target="_blank" id="register" >Sign up</a>
+            </div>
         </form>
     </div>
 </body>
