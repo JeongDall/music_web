@@ -1,0 +1,90 @@
+<!doctype html>
+ <head>
+ <title>회원가입</title>
+  <style>
+	#sign-up{
+		margin: 0 10%;
+        padding: 10% 25%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+ </head>
+ <body>
+  <div id="sign-up">
+	<h3 style="margin-bottom: 60px; display: flex; justify-content: center; font-size: 23px; font-weight: 700; color: #c583fe;">Welcome to So-So!</h3>
+
+	<label for="name">Name</label>
+	  <div class="field">
+		<input class="input mb-2" type="text" id="name" placeholder="Name">
+	  </div>
+
+	<label for="idInput">ID</label>
+	  <div class="field">
+		<input class="input mb-2" type="text" id="idInput" placeholder="ID">
+	  </div>
+
+	<label for="pwInput">Password</label>
+	  <div class="field">
+		<div class="control has-icons-right">
+		  <input class="input mb-2" type="password" id="pwInput" placeholder="Password">
+		  <span class="icon is-right">
+			<i class="fas fa-check"></i>
+		  </span>
+		</div>
+	  </div>
+
+	<label for="pwInput2">Confirm password</label>
+	  <div class="field">
+		<div class="control has-icons-right">
+		  <input class="input mb-2" type="password" id="pwInput" placeholder="Confirm password">
+		  <span class="icon is-right">
+			<i class="fas fa-check"></i>
+		  </span>
+		</div>
+	  </div>
+
+	<label for="phone">Phone number</label>
+		<div class="field-body">
+		  <div class="field is-expanded">
+			<div class="field has-addons">
+			  <p class="control">
+				<a class="button is-static">
+				  +82
+				</a>
+			  </p>
+			  <p class="control is-expanded">
+				<input class="input" type="tel" placeholder="Your phone number">
+			  </p>
+			</div>
+			<p class="help mb-3">Do not enter the first zero</p>
+		  </div>
+		</div>
+	 
+
+	<label for="email">Email</label>
+	  <div class="field">
+		<input class="input mb-2" type="email" id="email" placeholder="hanna@example.com">
+	  </div>
+
+	<label for="dob">생일</label>
+	 <input type="date" name="dob" /><br />
+	
+	<label for="gender">성별</label>
+	<div class="control">
+		<div class="select mb-5" id="gender">
+		  <select>
+			<option>남성</option>
+			<option>여성</option>
+		  </select>
+		</div>
+	</div>
+	<button class="button is-link mb-3" style="background-color: #c583fe;">Submit</button>
+	<button class="button is-link is-light" style="color: #8800ff; background-color: #f6ecff;">Cancel</button>
+  </div>
+ </body>
+</html>
