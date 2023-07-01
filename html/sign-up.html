@@ -10,6 +10,14 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	#birth{
+		box-sizing: border-box;
+		padding: 2% 1.5%;
+        width: 100%;
+            
+        font-size: 16px;
+	}
 	
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -28,7 +36,7 @@
 		<input class="input mb-2" type="text" id="idInput" placeholder="ID">
 	  </div>
 
-	<label for="pwInput">Password</label>
+	<label for="pwInput">PW</label>
 	  <div class="field">
 		<div class="control has-icons-right">
 		  <input class="input mb-2" type="password" id="pwInput" placeholder="Password">
@@ -38,7 +46,7 @@
 		</div>
 	  </div>
 
-	<label for="pwInput2">Confirm password</label>
+	<label for="pwInput2">PW confirm</label>
 	  <div class="field">
 		<div class="control has-icons-right">
 		  <input class="input mb-2" type="password" id="pwInput" placeholder="Confirm password">
@@ -52,16 +60,11 @@
 		<div class="field-body">
 		  <div class="field is-expanded">
 			<div class="field has-addons">
-			  <p class="control">
-				<a class="button is-static">
-				  +82
-				</a>
-			  </p>
 			  <p class="control is-expanded">
-				<input class="input" type="tel" placeholder="Your phone number">
+				<input class="input" type="tel" placeholder="">
 			  </p>
 			</div>
-			<p class="help mb-3">Do not enter the first zero</p>
+			<p class="help mb-3">Please enter without -</p>
 		  </div>
 		</div>
 	 
@@ -70,21 +73,21 @@
 	  <div class="field">
 		<input class="input mb-2" type="email" id="email" placeholder="hanna@example.com">
 	  </div>
-
-	<label for="dob">생일</label>
-	 <input type="date" name="dob" /><br />
 	
 	<label for="gender">성별</label>
-	<div class="control">
+	  <div class="control">
 		<div class="select mb-5" id="gender">
 		  <select>
 			<option>남성</option>
 			<option>여성</option>
 		  </select>
 		</div>
-	</div>
-	<button class="button is-link mb-3" style="background-color: #c583fe;">Submit</button>
-	<button class="button is-link is-light" style="color: #8800ff; background-color: #f6ecff;">Cancel</button>
+	  </div>
+
+	<button class="button is-link mb-3" id="submit" style="background-color: #c583fe;">Submit</button>
+	<button class="button is-link is-light" id="cancel" style="color: #8800ff; background-color: #f6ecff;">Cancel</button>
+	</a>
   </div>
+  <script src="../sign-up.js"></script>
  </body>
 </html>
