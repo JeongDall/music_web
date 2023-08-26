@@ -7,7 +7,7 @@ canBtn.addEventListener('click', canSignup);
 function subSignup() {
     alert('회원가입에 성공하셨습니다!');
 
-    const link = '../So-So.html';
+    const link = '../So-So2.html';
     location.href = link;
 }
 

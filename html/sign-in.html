@@ -64,9 +64,7 @@
                     <input class="input" id="pwInput" type="password" placeholder="">
             </div>
             
-            <a href="#">
-                <button class="signBtn" >Sign in</button>
-            </a>
+            <button type="button" class="signBtn">Sign in</button>    
 
             <div class="field-signup" >
                 <label>New to So-So?</label>&nbsp;&nbsp;
@@ -74,5 +72,11 @@
             </div>
         </form>
     </div>
+    <script>
+        document.querySelector('button').addEventListener('click', e =>{
+            const link = '../So-So2.html';
+            location.href = link;
+        });
+    </script>
 </body>
 </html>
