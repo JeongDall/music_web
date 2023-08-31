@@ -1,0 +1,311 @@
+<!doctype html>
+<head>
+	<title>TOP10</title>
+	<style>
+		table {
+			width: 100%;
+			background-color: none;
+			text-align: center;
+
+			border: 1px rgba(0, 0, 0, 0.099);
+		}
+		tr, td, th{
+			border: 1px rgba(0, 0, 0, 0.099);
+		}
+	</style>
+</head>
+<body>
+	<table border="0">
+	<caption><!--체크박스, 순위, 앨범사진, 곡정보, 앨범, 좋아요, 듣기--></caption>
+		<tr id="0">
+			<th>
+			<div>
+			<input title="곡 전체 선택" type="checkbox"/>
+			</div>
+			</th>
+			<th>순위</th>
+			<th>   </th>
+			<th>곡정보</th>
+			<th>앨범</th>
+			<th>좋아요</th>
+			<th>듣기</th>
+		</tr>
+		<tr id="1">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>1</td>
+			<td>
+				<img src="../image/정국-seven.webp" width="70" height="70">
+			</td>
+			<td>
+				<strong>Seven (feat. Latto) - Clean Ver.</strong>
+				<br>
+				정국
+			</td>
+			<td>Seven (feat. Latto) - Clean Ver.</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src="../mp3/정국 - Seven (feat.Latto) (Clean .Ver).mp3" type="audio/mpeg">
+					<source src="../mp3/정국 - Seven (feat.Latto) (Clean .Ver).ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="2">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>2</td>
+			<td>
+				<img src="../image/뉴진스-super shy.webp" width="70" height="70">
+			</td>
+			<td>
+				<strong>Super Shy</strong>
+				<br>
+				NewJeans
+			</td>
+			<td>NewJeans 2nd EP 'Get Up'</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src="../mp3/NewJeans - Super Shy.mp3" type="audio/mpeg">
+					<source src="../mp3/NewJeans - Super Shy.ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="3">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>3</td>
+			<td>
+				<img src="../image/뉴진스-super shy.webp" width="70" height="70">
+			</td>
+			<td>
+				<strong>ETA</strong>
+				<br>
+				NewJeans
+			</td>
+			<td>NewJeans 2nd EP 'Get Up'</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src="../mp3/NewJeans - ETA.mp3" type="audio/mpeg">
+					<source src="../mp3/NewJeans - ETA.ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="4">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>4</td>
+			<td>
+				<img src="../image/박재정.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>헤어지자 말해요</strong>
+				<br>
+				박재정
+			</td>
+			<td>1집 Alone</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="5">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>5</td>
+			<td>
+				<img src="../image/전소미.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>Fast Forward</strong>
+				<br>
+				전소미
+			</td>
+			<td>GAME PLAN</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="6">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>6</td>
+			<td>
+				<img src="../image/우디.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>사막에서 꽃을 피우듯</strong>
+				<br>
+				우디 (Woody)
+			</td>
+			<td>사막에서 꽃을 피우듯</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="7">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>7</td>
+			<td>
+				<img src="../image/아이브.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>I AM</strong>
+				<br>
+				IVE (아이브)
+			</td>
+			<td>I've IVE</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="8">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>8</td>
+			<td>
+				<img src="../image/악뮤.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>Love Lee</strong>
+				<br>
+				AKMU (악뮤)
+			</td>
+			<td>Love Lee</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="9">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>9</td>
+			<td>
+				<img src="../image/여자아이들.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>퀸카 (Queencard)</strong>
+				<br>
+				(여자)아이들
+			</td>
+			<td>I feel</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+		<tr id="10">
+			<td>
+				<div>
+					<input title="곡 선택" type="checkbox"/>
+				</div>
+			</td>
+			<td>10</td>
+			<td>
+				<img src="../image/라우브.jpeg" width="70" height="70">
+			</td>
+			<td>
+				<strong>Steal The Show (From “엘리멘탈”)</strong>
+				<br>
+				Lauv
+			</td>
+			<td>Steal The Show (From “엘리멘탈”)</td>
+			<td>
+				<input id="img" onclick="toggleImg()" type="image" src="../image/heart.png" width="20" height="20" alt="">
+			</td>
+			<td>
+				<audio controls >
+					<source src=".mp3" type="audio/mpeg">
+					<source src=".ogg" type="audio/ogg">
+					브라우저가 오디오 요소를 지원하지 않습니다.
+				</audio>
+			</td>
+		</tr>
+
+	</table>
+	<script>
+		function toggleImg() {
+			document.getElementById("img").src="../image/hearts.png";
+		}
+	</script>
+</body>
+</html>
