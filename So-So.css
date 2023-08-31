@@ -18,6 +18,7 @@ header, nav, main {
 
 .sign {
 	margin: 10px;
+	padding-top: 10px;
 }
 
 .sign a {
@@ -25,12 +26,12 @@ header, nav, main {
 }
 
 .soso-title {
-	margin: 20px;
-	padding-left: 30px;
+	margin: 30px 0;
+	padding: 20px 20px 10px 0;
 }
 
 .search{
-	margin-top: 35px;
+	margin-top: 63px;
 
 	width: 35%;
 	height: 40px;
@@ -97,28 +98,33 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	overflow: hidden;
-	float: left;
-	border: 0;
 	outline: none;
+	border: 1;
+	
+	float: left;
+	margin-bottom: 80px;
+	
+	display: flex;
+}
+
+section{
+	border: 1px solid rgba(134, 133, 133, 0.312);
+	padding-left: 10px;
+
+	text-align: center;
 }
 
 #article1{
 	margin-top: 10px;
+
+	text-align: center;
 }
 
 #Like-Login {
 	box-sizing: border-box;
-	float: left;
+	float: right;
     padding: 10px;
 	margin: 0 0 0 50px;
-}
-
-#likebox {
-	margin: 50px 0 10px 0;
-}
-
-#login {
-    margin-top: 10px; 
 }
 
 #another-web{
